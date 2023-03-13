@@ -1,7 +1,10 @@
 package is.hi.hbv202g.ass8;
 
+import is.hi.hbv202g.ass8.entities.Student;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Student student = new Student("Binni", true);
+        System.out.println(student.getName());
     }
 }
