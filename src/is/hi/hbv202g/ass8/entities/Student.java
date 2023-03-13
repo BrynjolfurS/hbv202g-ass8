@@ -11,12 +11,10 @@ package is.hi.hbv202g.ass8.entities;
 
 public class Student extends User{
     private boolean feePaid;
-    private String name;
 
     public Student(String name, boolean feePaid) {
         super(name);
         this.feePaid = feePaid;
-        this.name = name;
     }
 
     public boolean isFeePaid() {

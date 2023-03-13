@@ -2,7 +2,6 @@ package is.hi.hbv202g.ass8.services;
 
 import is.hi.hbv202g.ass8.entities.Book;
 import is.hi.hbv202g.ass8.entities.User;
-
 import java.time.LocalDate;
 
 /***********************************************************
