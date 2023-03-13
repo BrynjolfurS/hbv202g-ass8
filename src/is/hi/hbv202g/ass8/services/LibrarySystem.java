@@ -26,22 +26,34 @@ public class LibrarySystem {
 
     public void addFacultyMemberUser(String name, String department) {
         FacultyMember newFacultyMemberUser = new FacultyMember(name, department);
+        users.add(newFacultyMemberUser);
     }
 
     public Book findBookByTitle(String title) {
-
+        for (Book book: books) {
+            if (book.getTitle().equals(title)){
+                return book;
+            }
+        }
+        return null;
     }
 
     public User findUserByName(String name) {
-
+        for (User user: users) {
+            if (user.getName().equals(name)) {
+                return user;
+            }
+        }
+        return null;
     }
 
     public void borrowBook(User user, Book book) {
-
+        Lending lendBookToUser = new Lending(book, user);
+        lendingList.add(lendBookToUser);
     }
 
     public void extendLending(FacultyMember facultyMember, Book book, LocalDate newDueDate) {
-
+        Lending lendingToExtend =
     }
 
     public void returnBook(User user, Book book) {

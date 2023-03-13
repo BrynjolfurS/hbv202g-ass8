@@ -13,10 +13,10 @@ public class Student extends User{
     private boolean feePaid;
     private String name;
 
-    public Student(String name, boolean feePaid, String name1) {
+    public Student(String name, boolean feePaid) {
         super(name);
         this.feePaid = feePaid;
-        this.name = name1;
+        this.name = name;
     }
 
     public boolean isFeePaid() {

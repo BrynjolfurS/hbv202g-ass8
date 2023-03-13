@@ -12,10 +12,10 @@ public class FacultyMember extends User {
     private String department;
     private String name;
 
-    public FacultyMember(String name, String department, String name1) {
+    public FacultyMember(String name, String department) {
         super(name);
         this.department = department;
-        this.name = name1;
+        this.name = name;
     }
 
     public String getDepartment() {
